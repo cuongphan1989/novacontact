@@ -129,7 +129,7 @@ class DemoViewPager extends Component {
       //alert(value);
       if (f == 0) {
         let data = dulieu.filter((item)=>{
-          if (item.Name.indexOf(value) > -1 || item.UnsignFullName.indexOf(value) > -1 || item.Email.indexOf(value) > -1 || item.OneContact.indexOf(value) > -1) {
+          if (item.Name.indexOf(value) > -1 || item.UnsignName.indexOf(value) > -1 || item.Email.indexOf(value) > -1 || item.OneContact.indexOf(value) > -1) {
             return item;
           }
         });
@@ -140,7 +140,7 @@ class DemoViewPager extends Component {
       }
       else {
         let data = dulieu.filter((item)=>{
-          if (item.Favorite == 1 && (item.Name.indexOf(value) > -1 || item.UnsignFullName.indexOf(value) > -1 || item.Email.indexOf(value) > -1 || item.OneContact.indexOf(value) > -1)) {
+          if (item.Favorite == 1 && (item.Name.indexOf(value) > -1 || item.UnsignName.indexOf(value) > -1 || item.Email.indexOf(value) > -1 || item.OneContact.indexOf(value) > -1)) {
             return item;
           }
         });
